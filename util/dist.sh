@@ -1,11 +1,12 @@
-#!/bin/sh
+#!/usr/bin/env sh
+
 set -eu
 
 # create directories
-mkdir -p public/bin
-mkdir -p public/reports
-mkdir -p public/reports/lcov
-mkdir -p public/reports/scan-build
+mkdir -p -v public/bin
+mkdir -p -v public/reports
+mkdir -p -v public/reports/lcov
+mkdir -p -v public/reports/scan-build
 
 # copy distributable artifacts
 cp dist/* public/bin/
